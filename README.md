@@ -1,11 +1,12 @@
 # semanticIDP
 A StyleGAN2-based method to create semantic image-derived phenotypes (IDPs).
+
 ![Workflow](doc/workflow.png)
 ## Prerequisite
 This method uses the StyleGAN2 PyTorch implementation at (https://github.com/rosinality/stylegan2-pytorch). Please install it and refer to its usage before using the script in this repository.
 ## Usage
 Please run the following steps in turn:
-* Prepare data (Prepare.py at [rosinality/stylegan2-pytorch](https://github.com/rosinality/stylegan2-pytorch))
+* Prepare data (prepare_data.py at [rosinality/stylegan2-pytorch](https://github.com/rosinality/stylegan2-pytorch))
 * Train model (train.py at [rosinality/stylegan2-pytorch](https://github.com/rosinality/stylegan2-pytorch))
 * Invert target images (projector.py at [rosinality/stylegan2-pytorch](https://github.com/rosinality/stylegan2-pytorch))
 * Closed-form factorization (closed_form_factorization.py at [rosinality/stylegan2-pytorch](https://github.com/rosinality/stylegan2-pytorch))
