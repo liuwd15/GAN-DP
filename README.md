@@ -12,11 +12,16 @@ Please run the following steps in turn:
 * Create semantic IDPs (get_coordinate.py in this repository)
 ## Example
 Here I provide sample intermediate result files (in folder **sample**) to demonstrate the last step to create semantic IDPs.
+
 Folder **sample/inversion_results** contains the sample output results of the third step, inversion of target images.
+
 File **sample/factor.pt** is the sample output result of the four step, closed-form factorization.
+
 Then run:
 > python get_coordinate.py --factor sample/factor.pt --projection_dir sample/inversion_results
+
 In the output file, the semantic IDPs are ordered by their relative importance (singular values). Select appropriate number of IDPs for GWAS by yourself!
 ## References
 StyleGAN2 [[Paper](https://arxiv.org/abs/1912.04958)][[Github](https://github.com/NVlabs/stylegan2)]
+
 Closd-form factorization [[Paper](https://arxiv.org/abs/2007.06600)][[Github](https://github.com/genforce/sefa)]
