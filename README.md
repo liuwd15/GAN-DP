@@ -24,17 +24,29 @@ Then run:
 In the output file, the semantic IDPs are ordered by their relative importance (singular values). Select appropriate number of IDPs for GWAS by yourself!
 ## Semantic IDPs
 You can annotate IDPs by changing latent codes in each semantic direction. Here we show the results of fundus vasculature images.
+
 ![IDP0](doc/semantic_direction_0.gif)
+
 Contrast
+
 ![IDP1](doc/semantic_direction_1.gif)
+
 Upper/lower vessel length
+
 ![IDP2](doc/semantic_direction_2.gif)
+
 Left/right vessel length
+
 ![IDP3](doc/semantic_direction_3.gif)
+
 Vessel curvature
+
 ![IDP4](doc/semantic_direction_4.gif)
+
 Middle vessel
+
 ![IDP5](doc/semantic_direction_5.gif)
+
 Branches
 ## References
 StyleGAN2 [[Paper](https://arxiv.org/abs/1912.04958)][[Github](https://github.com/NVlabs/stylegan2)]
