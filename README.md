@@ -1,4 +1,4 @@
-# semanticIDP
+# GAN-DP
 A StyleGAN2-based method to create semantic image-derived phenotypes (IDPs).
 
 ![Workflow](doc/workflow.png)
@@ -12,7 +12,7 @@ Please run the following steps in turn:
 * Closed-form factorization (closed_form_factorization.py at [rosinality/stylegan2-pytorch](https://github.com/rosinality/stylegan2-pytorch))
 * Create semantic IDPs (get_coordinate.py in this repository)
 ## Example
-Here I provide sample intermediate result files (in folder **sample**) to demonstrate the last step to create semantic IDPs.
+We provide sample intermediate result files (in folder **sample**) to demonstrate the last step to create semantic IDPs.
 
 Folder **sample/inversion_results** contains the sample output results of the third step, inversion of target images.
 
@@ -22,6 +22,20 @@ Then run:
 > python get_coordinate.py --factor sample/factor.pt --projection_dir sample/inversion_results
 
 In the output file, the semantic IDPs are ordered by their relative importance (singular values). Select appropriate number of IDPs for GWAS by yourself!
+## Semantic IDPs
+You can annotate IDPs by changing latent codes in each semantic direction. Here we show the results of fundus vasculature images.
+![IDP0](doc/semantic_direction_0.gif)
+Contrast
+![IDP1](doc/semantic_direction_1.gif)
+Upper/lower vessel length
+![IDP2](doc/semantic_direction_2.gif)
+Left/right vessel length
+![IDP3](doc/semantic_direction_3.gif)
+Vessel curvature
+![IDP4](doc/semantic_direction_4.gif)
+Middle vessel
+![IDP5](doc/semantic_direction_5.gif)
+Branches
 ## References
 StyleGAN2 [[Paper](https://arxiv.org/abs/1912.04958)][[Github](https://github.com/NVlabs/stylegan2)]
 
